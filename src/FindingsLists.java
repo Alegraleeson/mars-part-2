@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
-import java.util.HashMap;
+import java.util.*;
 
 public class FindingsLists {
     public FindingsLists() throws InterruptedException {
@@ -29,7 +26,7 @@ public class FindingsLists {
 
         Thread.sleep(500);
 
-        Hashmap<String, String> fossilDirectory = new Hashmap<>();
+        HashMap<String, String> fossilDirectory = new HashMap<>();
 
         System.out.println("Fossil data downloaded");
 
@@ -51,8 +48,8 @@ public class FindingsLists {
         }
         Thread.sleep(500);
 
-        Hashset<String> suppliesBrought = new Hashset<>();
-        Hashset<String> suppliesUsed = new Hashset<>();
+        HashSet<String> suppliesBrought = new HashSet<>();
+        HashSet<String> suppliesUsed = new HashSet<>();
 
         suppliesBrought.add("Food");
         suppliesBrought.add("Water");

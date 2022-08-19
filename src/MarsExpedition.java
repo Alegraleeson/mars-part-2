@@ -18,7 +18,7 @@ public class MarsExpedition {
             System.out.println("Hello user. What is your name?");
             String name = input.nextLine();
 
-            System.out.println("Hi, " + name + " Welcome to the Expedition prep program.n/" +"Are you ready to head out into the new world?n/" + "Type Y or N");
+            System.out.println("Hi, " + name + " Welcome to the Expedition prep program." +"\nAre you ready to head out into the new world?" + "\nType Y or N");
             String excited = input.nextLine();
 
 
