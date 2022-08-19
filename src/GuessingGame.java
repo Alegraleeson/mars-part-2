@@ -14,9 +14,38 @@ public class GuessingGame {
 
         System.out.println("Welcome " + name + "! I'm thinking of a number between 1 and 100.");
 
-        Math.random();
+        Random rand = new Random();
 
-        rand.nextInt(100);
+        int number = rand.nextInt(100);
+
+        System.out.println("Try to guess my number.");
+
+        while (correctGuess == false) {
+            increment++;
+            try {
+                guess = input.nextInt();
+            }
+            catch(Exception e) {
+                String badinput = input.next();
+                System.out.println("That's not an integer, try again");
+                continue;
+            }
+            if(guess > 100 || guess < 1){
+                System.out.println("Your guess is out of range. Please try again.");
+                continue;
+            } else if(guess > number){
+                System.out.println("Your guess is too high.  Please try again.");
+                continue;
+            } else if(guess < number){
+                System.out.println("Your guess is too low.  Please try again.");
+                continue;
+            } else if (guess == number){
+                System.out.println("Well done " + name + "! You found my number in " + increment + " tries!");
+                correctGuess = true
+            }
+        }
+
+
 
     }
 
