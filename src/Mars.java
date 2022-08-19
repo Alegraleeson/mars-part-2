@@ -29,6 +29,7 @@ public class Mars {
 
         new GuessingGame();
         new MarsExpedition();
+        new FindingsLists();
 
 
     }
