@@ -28,6 +28,7 @@ public class Mars {
         Landing = LandingCheck(100);
 
         new GuessingGame();
+        new MarsExpedition();
 
 
     }
