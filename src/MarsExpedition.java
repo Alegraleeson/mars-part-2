@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class MarsExpedition {
     public MarsExpedition() {
             Scanner input = new Scanner(System.in);
-            System.out.println("Expedition prep program starting…");
+            System.out.println("Expedition prep program starting...");
 
-            System.out.println("Booting up…");
+            System.out.println("Booting up...");
 
             System.out.println("...");
 
@@ -18,7 +18,7 @@ public class MarsExpedition {
             System.out.println("Hello user. What is your name?");
             String name = input.nextLine();
 
-            System.out.println("Hi, " + name + " Welcome to the Expedition prep program./n" +"Are you ready to head out into the new world?/n" + "Type Y or N");
+            System.out.println("Hi, " + name + " Welcome to the Expedition prep program.n/" +"Are you ready to head out into the new world?n/" + "Type Y or N");
             String excited = input.nextLine();
 
 
@@ -35,13 +35,13 @@ public class MarsExpedition {
             input.nextLine();
 
             if (teamSize > 2){
-                System.out.println("That’s way to many people. We can only send 2 more members.");
+                System.out.println("That's way to many people. We can only send 2 more members.");
                 teamSize = 2;
             } else if(teamSize < 2) {
-                System.out.println("That’s not enough people. We need you and 2 more members.");
+                System.out.println("That's not enough people. We need you and 2 more members.");
                 teamSize = 2;
             } else if(teamSize == 2) {
-                System.out.println("That’s a perfect sized team. Good job.");
+                System.out.println("That's a perfect sized team. Good job.");
             }
 
             System.out.println("You are allowed to bring one weapon with you. You know, just in case. What do you want to bring?");
