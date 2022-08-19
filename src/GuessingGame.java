@@ -1,4 +1,5 @@
-import java.util.Scanner
+import java.util.Scanner;
+import java.util.Random;
 
 
 public class GuessingGame {
@@ -41,7 +42,7 @@ public class GuessingGame {
                 continue;
             } else if (guess == number){
                 System.out.println("Well done " + name + "! You found my number in " + increment + " tries!");
-                correctGuess = true
+                correctGuess = true;
             }
         }
 
